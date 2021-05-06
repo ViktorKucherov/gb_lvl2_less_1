@@ -3,6 +3,6 @@ package viktor.kucherov;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	        //pls text here
     }
 }
