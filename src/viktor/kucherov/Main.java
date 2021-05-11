@@ -25,10 +25,15 @@ public class Main {
                 "Мышь", "Кролик", "Корова", "Лев",
                 "Волк", "Собака", "Мышь", "Лошадь"
         };
-        Map<String, Integer> animalCountMap = createTheAnimalCounter(animals);
+        //Map<String, Integer> animalCountMap = createTheAnimalCounter(animals);
 
+        //2 task
+        PhoneBook pb = new PhoneBook();
+        pb.addContact("Иванов", "+79994476872");
+        pb.addContact("Иванов", "+71544476872");
+        pb.addContact("Сетров", "+70994476872");
 
-
+        pb.showPhoneBook();
 
 
 
@@ -47,6 +52,7 @@ public class Main {
         for ( Map.Entry entry : animalCountMap.entrySet()) {
             System.out.println("Животных вида \"" + entry.getKey() + "\" : представлено в количестве " + entry.getValue());
         }
+
         return animalCountMap;
     }
 }
