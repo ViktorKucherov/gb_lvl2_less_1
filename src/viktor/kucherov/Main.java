@@ -25,16 +25,18 @@ public class Main {
                 "Мышь", "Кролик", "Корова", "Лев",
                 "Волк", "Собака", "Мышь", "Лошадь"
         };
-        //Map<String, Integer> animalCountMap = createTheAnimalCounter(animals);
+        Map<String, Integer> animalCountMap = createTheAnimalCounter(animals);
 
         //2 task
         PhoneBook pb = new PhoneBook();
-        pb.addContact("Иванов", "+79994476872");
-        pb.addContact("Иванов", "+71544476872");
-        pb.addContact("Сетров", "+70994476872");
+        pb.add("Kucherov", "+79880125898");
+        pb.add("Ivanov", "+79880222298");
+        pb.add("Kucherov", "+79999999999");
+        pb.add("Sidorov", "+19034774663");
 
-        pb.showPhoneBook();
-
+        pb.get("Jackson");
+        pb.get("Kucherov");
+        pb.get("Sidorov");
 
 
 
